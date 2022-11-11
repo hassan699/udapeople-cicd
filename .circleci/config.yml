@@ -157,7 +157,7 @@ jobs:
       - persist_to_workspace:
           root: ~/
           paths: inventory
-      - destroy_environment
+      # - destroy_environment
 #       # Here's where you will add some code to rollback on failure      
 
 #   configure-infrastructure:
