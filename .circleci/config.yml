@@ -234,7 +234,7 @@ jobs:
           name: Run migrations
           command: |
             cd backend
-            npm install
+            sudo npm install npm@latest -g
             npm run migrations > migrations_dump.txt
             cat migrations_dump.txt
             npm cache clean --force
