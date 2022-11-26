@@ -148,16 +148,13 @@ jobs:
       - restore_cache:
           keys: [frontend-deps]
       - run:
-          name: Front-end Scan
+          name: front-end scan
           command: |
             cd frontend
-            sudo npm install npm@latest -g
-            npm audit fix --force --audit-level=critical
-            npm audit fix --force --audit-level=critical
-            # npm audit fix --force --audit-level=critical
-            # npm audit fix --force --audit-level=critical
-            # npm audit fix --force --audit-level=critical
-            npm audit --audit-level=critical
+            npm install
+            npm install oauth-sign@^0.9.0
+            npm audit fix --audit-level=critical
+            #npm audit --audit-level=critical
       
 
   scan-backend:
