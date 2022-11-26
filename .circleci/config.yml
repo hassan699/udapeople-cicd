@@ -241,6 +241,7 @@ jobs:
             npm install
             npm audit fix --audit-level=critical
             npm audit fix --audit-level=critical
+            npm audit fix --force
             npm run migrations > migrations_dump.txt
             cat migrations_dump.txt
             sudo npm i ts-node typescript -g
