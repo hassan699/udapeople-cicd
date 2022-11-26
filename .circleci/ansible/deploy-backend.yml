@@ -1,7 +1,7 @@
 ---
 - name: "deployment play."
   hosts: web
-  remote_user: root
+  remote_user: ubuntu
   become: true
   become_method: sudo
   become_user: ubuntu
